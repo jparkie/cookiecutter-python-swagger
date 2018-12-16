@@ -1,0 +1,5 @@
+coverage
+flask_testing
+pluggy
+py
+pytest
