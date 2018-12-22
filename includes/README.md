@@ -1,35 +1,50 @@
-## Included Configuration Files
+# {{cookiecutter.project}}
 
+{{cookiecutter.description}}
 
-### tox.ini
-https://tox.readthedocs.io/en/latest/
+## Makefile
 
-Configures and builds a consistent environment for continual integration and coverage checks
+```
+> make help
+Welcome to {{cookiecutter.project}}!
 
-### requirements.txt
+This project is preferably managed with Docker. Please have Docker installed.
 
-Frozen list of dependencies for running the web server
+    uninstall-docker
+        Remove Docker image cookiecutter_py36_python_swagger
+    init-hooks
+        Initialize project hooks
+    init
+        Initialize project directory
+    interactive
+        Start an interactive, Dockerized bash session
+    python PYTHON_ARGS="--version"
+        Execute Python within a Docker container
+    run
+        Run the Python project
+    test TEST_ARGS="*"
+        Test the Python project
+    pre-commit
+        Execute pre-commit hooks
+        See https://pre-commit.com/ for more information
+    clean
+        Clean the Python project
+```
 
-### requirements-dev.txt
+## Configuration Files
 
-Lists tools needed for developing the web server
+- [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) - Configures a Docker container used to deploy the web server
+- [`Dockerfile.develop`](https://docs.docker.com/engine/reference/builder/) - Configures for Docker container used for development
+- [`Jenkinsfile`](https://jenkins.io/doc/book/pipeline/jenkinsfile/) - Configures the continuous integration process
+- [`Makefile`](https://www.gnu.org/software/make/) - Simplifies various project management processes into `make` targets
+- [`requirements.txt`](https://pip.pypa.io/en/stable/user_guide/) - List of dependencies for running the web server
+- [`requirements-dev.txt`](https://pip.pypa.io/en/stable/user_guide/) - List of dependencies for developing the web server
+- [`tox.ini`](https://tox.readthedocs.io/en/latest/) - Configures and builds a consistent environment for continuous integration and coverage checks
 
-### Makefile
-https://en.wikipedia.org/wiki/Makefile
+## Contact
 
-Simplifies various project management processes into aliases
+**Email**: [{{cookiecutter.author_email}}](mailto:{{cookiecutter.author_email}})
 
-### Jenkinsfile
-https://jenkins.io/
+## Credits
 
-Configures the continual integration process
-
-### Dockerfile
-
-Configures for docker container used to deploy web server
-
-### Dockerfile.develop
-
-https://www.docker.com/
-
-Configures for docker container used for development
+This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [jparkie/cookiecutter-python-swagger](https://github.com/jparkie/cookiecutter-python-swagger) project template.
