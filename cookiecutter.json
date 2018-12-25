@@ -1,4 +1,5 @@
 {
+	"swagger_json_file": "../swagger.json",
 	"project": "example",
 	"version": "0.1.0",
 	"description": "N/A",

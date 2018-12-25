@@ -37,6 +37,7 @@ cookiecutter git@github.com:jparkie/cookiecutter-python-swagger.git
 
 ```
 > cookiecutter git@github.com:jparkie/cookiecutter-python-swagger.git
+swagger_json_file [../swagger.json]:
 project [example]:
 version [0.1.0]:
 description [N/A]:
@@ -101,6 +102,7 @@ This project is preferably managed with Docker. Please have Docker installed.
 ├── requirements-dev.txt
 ├── requirements.txt
 ├── setup.py
+├── swagger.json
 ├── tox.ini
 └── {{cookiecutter.project}}
     ├── __init__.py

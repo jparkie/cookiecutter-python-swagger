@@ -1,4 +1,0 @@
-{
-	"packageName": "{{cookiecutter_project}}",
-	"packageVersion": "{{cookiecutter_version}}"
-}
