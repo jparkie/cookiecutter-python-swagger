@@ -101,14 +101,14 @@ done
 # Step 5:
 #
 
-echo_info "Excluding includes/"
+echo_info "Removing includes/"
 rm -rf "./includes"
 
 #
 # Step 6:
 #
 
-echo_info "Excluding temps/"
+echo_info "Removing temps/"
 rm -rf "./temps"
 
 #
@@ -119,3 +119,9 @@ echo_info "Initializing Git"
 git init
 git add .
 git commit -n -m "Initial Commit"
+
+#
+# Done:
+#
+
+echo_info "Done!"

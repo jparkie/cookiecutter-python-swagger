@@ -30,3 +30,9 @@ fi
 
 echo_info "Copying {{cookiecutter.swagger_json_file}}"
 cp "{{cookiecutter.swagger_json_file}}" "./swagger.json"
+
+#
+# Done:
+#
+
+echo_info "Done!"
