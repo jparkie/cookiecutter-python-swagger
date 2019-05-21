@@ -48,10 +48,10 @@ author_email [N/A]:
 
 ### Dockerfile + Makefile + Jenkinsfile
 
-- A Dockerfile.develop with Python 3.6.7, tox, and tox-venv is provided to self-contain the project.
-- A Dockerfile is provided to deploy the Swagger-generated Python server stub.
-- A Makefile is provided to execute various project commands within a Docker container.
-- A Jenkinsfile is provided with the following stages: Checkout, Clean, and Unit Test.
+- A `Dockerfile.develop` with Python 3.6.7, tox, and tox-venv is provided to self-contain the project.
+- A `Dockerfile` is provided to deploy the Swagger-generated Python server stub.
+- A `Makefile` is provided to execute various project commands within a Docker container.
+- A `Jenkinsfile` is provided with the following stages: Checkout, Clean, and Unit Test.
 
 #### Makefile
 
